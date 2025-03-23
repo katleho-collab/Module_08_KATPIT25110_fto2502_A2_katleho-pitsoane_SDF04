@@ -1,0 +1,147 @@
+/* Define CSS variables for theming */
+:root {
+    --footer-bg: #659f8f;
+    --text-color: #000000; 
+    --link-color: #000000;
+    --button-bg: #f28c38;
+    --divider-color: #f28c38;
+}
+
+/* Footer base styling */
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--text-color);
+    padding: 3rem 1.5rem;
+}
+
+/* Container for main content */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; 
+    gap: 2rem; 
+}
+
+/* General section styling */
+.footer-container section {
+    flex: 1 1 300px;
+    min-width: 0;
+    text-align: left; 
+}
+
+/* Newsletter section */
+.newsletter h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1023px) {
+    .newsletter h2 {
+        white-space: normal;
+    }
+}
+.subscription-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.subscription-form input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px 0 0 4px;
+    background-color: white;
+}
+
+.subscription-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* Links and Technologies sections */
+.links h3,
+.technologies h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.links ul,
+.technologies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li,
+.technologies li {
+    margin-bottom: 0.5rem;
+}
+
+.links a,
+.technologies a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Divider */
+.footer-divider {
+    max-width: 1200px; 
+    margin: 2rem auto; 
+    height: 1px;
+    background-color: var(--divider-color);
+}
+
+/* Logo section */
+.footer-logo {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-logo img {
+    height: 1.75rem;
+    width: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1.5rem 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 1rem; 
+    }
+
+    .subscription-form {
+        flex-direction: column;
+    }
+
+    .subscription-form input {
+        border-radius: 10px;
+        margin-bottom: 0.25rem;
+    }
+
+    .subscription-form button {
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .newsletter {
+        grid-column: 1 / 3; 
+    }
+}

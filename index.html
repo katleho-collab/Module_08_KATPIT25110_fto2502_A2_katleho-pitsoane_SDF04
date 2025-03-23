@@ -4,15 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <footer class="bg-[#659f8f] dark:bg-[#313131]">
-        <div class="container px-6 py-12 mx-auto">
-            <div class="flex">
-                <a href="#">
-                    <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="CodeSpace Logo">
-                </a>
-            </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <section class="newsletter">    
+                <h2>Subscribe to our newsletter for updates</h2>
+                <form class="subscription-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+            <section class="links">
+                <h2>Quick Link</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Our Philosophy</a></li>
+                </ul>
+            </section>
+            <section class="technologies">
+                <h2>Technologies</h2>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-logo">
+            <a href="#">
+                <span>
+                <img src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="CodeSpace Logo">
+                </span>
+            </a>
         </div>
     </footer>
 </body>
